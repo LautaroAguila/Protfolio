@@ -1,0 +1,60 @@
+.navbar-wrapper {
+  position: relative;
+  margin-top: 60px;
+}
+
+.custom-navbar {
+  position: fixed;
+  max-height: 40px;
+  width: 100%;
+  z-index: 10;
+  background-color: #aca9a97a;
+  padding: 0.3rem 0;
+  border-top: 1px solid #8b8b8b;
+  border-bottom: 1px solid #8b8b8b;
+  transition: top 0.3s ease;
+}
+
+.custom-navbar.hide {
+  top: -209px; /* Esconde el navbar arriba de la pantalla */
+}
+
+.custom-navbar.show {
+  top: 50px; /* Muestra el navbar en su lugar */
+}
+
+.logo-wrapper-navbar {
+  position: relative;
+  z-index: 20;
+  top: 55px;
+}
+
+
+.main-logo {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .custom-navbar.show {
+    top: 80px;
+  }
+
+  .custom-navbar.hide {
+    top: -70px;
+  }
+
+  .navbar-wrapper {
+    margin-top: 40px;
+  }
+}

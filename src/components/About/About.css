@@ -35,7 +35,7 @@
   position: relative;
   top: -150px;
   left: -250px;
-  z-index: 10;
+  z-index: 2;
   margin-bottom: -220px;
 }
 
@@ -51,6 +51,8 @@
 .cv-boton{
     position: relative;
     top: -170px;
+    z-index: 3;
+    text-align: center;
   }
 
 .skills-list {
@@ -73,23 +75,70 @@
 
 /* Tablet */
 @media (max-width: 992px) {
+  .about-text {
+    position: inherit;
+    font-size: 1.1rem;
+    color: #000000;
+    line-height: 1.6;
+  }
+
+  .skills-list {
+    position: inherit;
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-weight: 500;
+    color: #222;
+  }
+  .about-section {
+    padding: 3rem 1rem 4rem;
+    max-height: none;
+    max-height: 2000px;
+  }
+
+  .cv-boton{
+    position:inherit;
+  }
+
+  .about-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .about-photo {
-    width: 300px;
-    height: 300px;
-    top: 0;
-    left: 0;
-    margin-bottom: 2rem;
+    width: 500px;
+    height: 500px;
+    top: -100px;
+    left: -100px;
+    animation: fadeIn 1s ease-in;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .skills-list {
-    justify-content: center;
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
   }
 
   .about-text {
+    font-size: 1rem;
     text-align: center;
+    padding: 0 1rem;
+  }
+
+  .skills-list {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -132,6 +181,8 @@
   .about-photo {
   width: 200px;
   height: auto;
+  top: 0;
+  left: 0;
   object-fit: cover;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   animation: fadeIn 1s ease-in;

@@ -32,9 +32,12 @@ const About = () => {
               <li>💻 Git / GitHub </li>
             </ul>
 
-            <a href={cv} download className="cv-boton mt-3 d-inline-block">
-              <Button variant="dark">Descargar CV</Button>
-            </a>
+            <Row className="justify-content-center align-items-center mt-4 cv-boton">
+              <a href={cv} download>
+                <Button variant="dark">Descargar CV</Button>
+              </a>
+            </Row>
+
           </Col>
         </Row>
       </div>

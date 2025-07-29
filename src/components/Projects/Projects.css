@@ -60,33 +60,31 @@
 }
 
 /* Responsive */
-@media (max-width: 991px) {
-  .project-logo {
-    width: 150px;
-    height: 150px;
-  }
-
-  .feature-circle-img {
-    width: 130px;
-    height: 130px;
-  }
-
-  .feature-img.feature-1 {
-    margin-top: 0;
+@media (max-width: 992px) {
+  .projects-section {
+    padding: 0 auto;
   }
 
   .app-name {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
   }
 
+  .project-logo {
+    width: 180px;
+    height: 180px;
+  }
+
+  .feature-circle-img {
+    width: 150px;
+    height: 150px;
+    margin: 5px auto;
+  }
+  
   .project-description {
-    font-size: 0.95rem;
-    text-align: center;
+    font-size: 0.9rem;
   }
 
-  .project-block {
-    flex-direction: column;
-  }
 }
 
 @media (max-width: 576px) {

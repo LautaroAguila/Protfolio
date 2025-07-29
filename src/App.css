@@ -1,32 +1,5 @@
-body {
-  margin: 0;
-  font-family: 'Arial Rounded MT Bold', sans-serif;
-  background-color: #3c2d6f;
-  color: white;
-}
-
 .hero-section, .projects-section, .about-section, .footer-section {
   position: relative;
   z-index: 1;
   overflow: hidden;
-}
-
-#tsparticles canvas {
-  position: absolute !important;
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
-
-h1, h2 {
-  font-weight: bold;
-}
-
-.rounded-circle {
-  width: 200px;
-  height: 200px;
-  border-radius: 50% !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }

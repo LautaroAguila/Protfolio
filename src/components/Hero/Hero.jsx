@@ -42,13 +42,14 @@ const Hero = () => {
 
       <Container className="hero-content">
         <Row className="align-items-center">
-          <Col md={6} className="hero-t text-white text-center text-md-start">
+          <Col md={6} className="hero-t text-white text-center text-md-start fade-in">
             <h1 className="hero-name">Lautaro Aguilar</h1>
             <p className="hero-text fs-4">Desarrollador Web | Estudiante en Ciencia de Datos</p>
           </Col>
-          <Col md={6} className="text-center mt-4 mt-md-0">
+          <Col md={6} className="text-center mt-4 mt-md-0 fade-in">
             <img src={foto} alt="Foto de Lautaro" className="hero-photo" />
           </Col>
+
         </Row>
       </Container>
     </section>

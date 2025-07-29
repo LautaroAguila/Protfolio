@@ -20,7 +20,10 @@
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding: 2rem;
 }
+
 .hero-t{
   position: relative;
   top: -150px;
@@ -31,40 +34,122 @@
   text-align: center;
   font-family: 'Space Grotesk', sans-serif; /* Cambiá si elegís otra fuente */
   font-weight: 700;
+  color: white;
 }
 
 .hero-text{
   font-size: 2rem;
   text-align: center;
-  font-family: 'Space Grotesk', sans-serif; /* Cambiá si elegís otra fuente */
+  font-family: 'Space Grotesk', sans-serif;
   font-weight: 700;
+  color: white;
+  margin-top: 1rem;
 }
 
 .hero-photo {
   position: relative;
   top:70px;
-  width: 775px;
-  height: 775px;
+  width: 750px;
+  height: 750px;
   border-radius: 10%;
   object-fit: cover;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  margin: 1rem auto 0 auto;
 }
 
+
+
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .hero-name {
-    font-size: 2.5rem;
-    text-align: center;
+    font-size: 3.5rem;
   }
 
   .hero-photo {
-    width: 180px;
-    height: 180px;
-    margin-top: 1rem;
+    width: 300px;
+    height: 300px;
   }
 
-  .hero-content {
-    padding-top: 4rem;
-    text-align: center;
+  .hero-text {
+    font-size: 1.3rem;
   }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+
+
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4rem 0rem;
+}
+
+.hero-t {
+  position: relative;
+  top: 0; /* Eliminamos el desplazamiento fijo */
+}
+
+.hero-name {
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  color: white;
+}
+
+.hero-text {
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  color: white;
+  margin-top: 1rem;
+}
+
+.hero-photo {
+  position: relative;
+  top: 10px;
+  width: 365px;
+  height: 365px;
+  border-radius: 10%;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  margin: 0;
+}
+}
+
+
+/* Animaciones */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0;
 }

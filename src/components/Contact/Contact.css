@@ -1,45 +1,74 @@
 .contact-section {
-   background-color: #8f678570;
-  max-height: 500px;
-  width: 80%;
+  background-color: #8f678570;
+  width: 90%;
+  max-width: 1200px;
   margin: 2% auto;
-  padding: 2rem 0;
+  padding: 4rem 2rem;
   display: flex;
   justify-content: center;
-  position: relative;
-  overflow: visible; /* ← Importante para permitir que la foto sobresalga */
   border-radius: 30px;
-  z-index: 2; /* esta sección va por encima de cualquier cosa anterior */
-  padding: 4rem 0;
+  position: relative;
+  z-index: 2;
+  overflow: visible;
 }
-
 
 .contact-logo {
   width: 180px;
   height: 180px;
   object-fit: contain;
   border-radius: 50%;
+  margin: 0 auto;
+  display: block;
 }
 
 .contact-title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 600;
   color: #333;
   margin-bottom: 1.5rem;
+  text-align: left;
 }
 
 .contact-info {
   font-size: 1.2rem;
-  color: #555;
+  color: #000000;
   margin-bottom: 0.8rem;
+  text-align: left;
 }
 
 .contact-info a {
   text-decoration: none;
-  color: #0077b5; /* color LinkedIn */
+  color: #b500b5;
   font-weight: 500;
 }
 
 .contact-info a:hover {
   text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+
+  .contact-title,
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-logo {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-title {
+    font-size: 1.8rem;
+  }
+
+  .contact-info {
+    font-size: 1rem;
+  }
 }

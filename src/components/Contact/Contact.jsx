@@ -12,12 +12,29 @@ const Contact = () => {
             <img src={logo} alt="Logo personal" className="contact-logo" />
           </Col>
           <Col md={8}>
-            <h3 className="contact-title">¡Conectemos!</h3>
-            <p className="contact-info">📞 +54 9 11 1234 5678</p>
-            <p className="contact-info">✉️ lautaro.aguilar@email.com</p>
+            <h3 className="contact-title">¡Contactame!</h3>
+
             <p className="contact-info">
-              🔗 <a href="https://www.linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer">linkedin.com/in/tuusuario</a>
+              <i className="bi bi-telephone-fill me-2"></i>
+              +54 9 11 6530 0627
             </p>
+
+            <p className="contact-info">
+              <i className="bi bi-envelope-fill me-2"></i>
+              lautaroaguilar.c@gmail.com
+            </p>
+
+            <p className="contact-info">
+              <i className="bi bi-linkedin me-2"></i>
+              <a
+                href="https://www.linkedin.com/in/lautaro-aguilar-19261b248/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                linkedin.com
+              </a>
+            </p>
+
           </Col>
         </Row>
       </Container>

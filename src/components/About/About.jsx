@@ -17,22 +17,22 @@ const About = () => {
             <p className="about-text">
               ¡Hola! Soy Lautaro Aguilar, desarrollador web con pasión por la tecnología y el diseño.
               Me especializo en construir interfaces modernas con React JS y Bootstrap, enfocándome en
-              la experiencia del usuario y el rendimiento.
+              la experiencia del usuario y solucionar problemas con herramientas sencillas.
             </p>
             <p className="about-text">
-              Actualmente estoy finalizando la carrera de Ciencias Físicas, y disfruto combinar
+              Actualmente estoy cursando la Licenciatura en Ciencias de Datos, y disfruto combinar
               lógica, estética y funcionalidad en cada proyecto.
             </p>
 
             <ul className="skills-list">
-              <li>⚛️ React JS / Vite</li>
-              <li>🎨 Bootstrap / CSS / Animaciones</li>
-              <li>🔥 Firebase (auth, storage, Firestore)</li>
-              <li>📱 Responsive Design</li>
-              <li>💻 Git / GitHub / Deploy en Vercel</li>
+              <li>⚛️ React JS </li>
+              <li>🐍 Python </li>
+              <li>🎨 Bootstrap / CSS </li>
+              <li>🔥 Firebase </li>
+              <li>💻 Git / GitHub </li>
             </ul>
 
-            <a href={cv} download className="mt-3 d-inline-block">
+            <a href={cv} download className="cv-boton mt-3 d-inline-block">
               <Button variant="dark">Descargar CV</Button>
             </a>
           </Col>

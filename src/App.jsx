@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import './App.css';
 import Hero from './components/Hero/Hero';
 import Projects from './components/Projects/Projects';
@@ -12,8 +13,9 @@ function App() {
       <NavBar />
       <Hero />
       <Projects />
-      <Contact />
       <About />
+      <Contact />
+      
     </>
   );
 }

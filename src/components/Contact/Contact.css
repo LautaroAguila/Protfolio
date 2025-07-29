@@ -2,7 +2,7 @@
   background-color: #8f678570;
   width: 90%;
   max-width: 1200px;
-  margin: 2% auto;
+  margin: 12% auto;
   padding: 4rem 2rem;
   display: flex;
   justify-content: center;
@@ -71,4 +71,18 @@
   .contact-info {
     font-size: 1rem;
   }
+}
+.contact-info i {
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: #0077b5;
+  font-weight: 500;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
 }

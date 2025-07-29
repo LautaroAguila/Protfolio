@@ -1,5 +1,6 @@
 import Lisa from '../../assets/lisa.png'
-import noFoto from '../../assets/noFoto.webp'
+import noFoto from '../../assets/nofoto.png'
+import proceso from '../../assets/proceso.png'
 import catalogo from '../../assets/catalogo de productos.jpeg'
 import estadisticas from '../../assets/estadisticas.jpeg'
 
@@ -8,7 +9,7 @@ export const projects = [
     title: 'LISA',
     description: 'Una aplicación simple para organizar y estar al tanto de tus productos. Con una interfaz amigable LISA te permite agregar productos, visualizarlos separados por tablas. Y ademas poder llevar un registro dinamico de tu stock.',
     logo: Lisa,
-    link: 'https://lisa-lake.vercel.app/planes',
+    link: 'https://lisa-lake.vercel.app/',
     features: [
       {
         title: 'Login con Google',
@@ -32,13 +33,13 @@ export const projects = [
   {
     title: 'Asistent',
     description: 'Una aplicación en desarrollo. Clave para tomar lista en las intituciones educativas. Lleva el registro de todos tus alumnos con informacion relevante para tener el control de su desempeño.',
-    logo: noFoto,
-    link: 'https://lisa-lake.vercel.app/planes',
+    logo: proceso,
+    link: '',
     features: [
       {
         title: 'Login con Google',
         text: 'Permite iniciar sesión de forma segura usando Google.',
-        image: catalogo,
+        image: noFoto,
       },
       {
         title: 'Tutorial en Video',
@@ -49,7 +50,7 @@ export const projects = [
       {
         title: 'Vista por Categorías',
         text: 'Organizá tus tareas por colores y prioridades.',
-        image: estadisticas,
+        image: noFoto,
       },
       
     ]
@@ -57,13 +58,13 @@ export const projects = [
   {
     title: 'TUTUrno',
     description: 'Una aplicación en desarrollo. Tus clientes podran sacar turnos para solicitar tus servicios. Deja atras los chats de Whatsapp y recibi notificaiones de los turnos asignados sin preocuparte.',
-    logo: noFoto,
-    link: 'https://lisa-lake.vercel.app/planes',
+    logo: proceso,
+    link: '',
     features: [
       {
         title: 'Login con Google',
         text: 'Permite iniciar sesión de forma segura usando Google.',
-        image: catalogo,
+        image: noFoto,
       },
       {
         title: 'Tutorial en Video',
@@ -74,7 +75,7 @@ export const projects = [
       {
         title: 'Vista por Categorías',
         text: 'Organizá tus tareas por colores y prioridades.',
-        image: estadisticas,
+        image: noFoto,
       },
       
     ]

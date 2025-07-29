@@ -2,7 +2,7 @@
   background-color: #8f678570;
   width: 90%;
   max-width: 1200px;
-  max-height: 670px;
+  max-height: 550px;
   margin: 2% auto;
   padding: 4rem 2rem 6rem;
   display: flex;
@@ -25,12 +25,12 @@
   font-family: 'Space Grotesk', sans-serif;
   color: #333;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 0px;
 }
 
 .about-photo {
-  width: 800px;
-  height: 800px;
+  width: 750px;
+  height: 750px;
   object-fit: contain;
   position: relative;
   top: -150px;
@@ -40,14 +40,23 @@
 }
 
 .about-text {
+  position: relative;
+  top: -170px;
   font-size: 1.1rem;
-  color: #444;
+  color: #000000;
   margin-bottom: 1rem;
   line-height: 1.6;
 }
 
+.cv-boton{
+    position: relative;
+    top: -170px;
+  }
+
 .skills-list {
   list-style: none;
+  position: relative;
+  top: -170px;
   padding-left: 0;
   display: flex;
   flex-wrap: wrap;
@@ -86,10 +95,32 @@
 
 /* Celular */
 @media (max-width: 576px) {
+  .about-text {
+    position: inherit;
+    font-size: 1.1rem;
+    color: #000000;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+
+  .skills-list {
+    position: inherit;
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-weight: 500;
+    color: #222;
+  }
   .about-section {
     padding: 3rem 1rem 4rem;
     max-height: none;
     max-height: 2000px;
+  }
+
+  .cv-boton{
+    position:inherit;
   }
 
   .about-inner {

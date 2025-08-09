@@ -15,9 +15,9 @@ const About = () => {
           </Col>
           <Col md={8}>
             <p className="about-text">
-              ¡Hola! Soy Lautaro Aguilar, desarrollador web con pasión por la tecnología y el diseño.
+              ¡Hola! Soy Lautaro Aguilar, desarrollador web apasionado por la tecnología y el diseño.
               Me especializo en construir interfaces modernas con React JS y Bootstrap, enfocándome en
-              la experiencia del usuario y solucionar problemas con herramientas sencillas.
+              la experiencia del usuario y en solucionar problemas con herramientas sencillas.
             </p>
             <p className="about-text">
               Actualmente estoy cursando la Licenciatura en Ciencias de Datos, y disfruto combinar

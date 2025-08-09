@@ -8,6 +8,7 @@
   flex-direction: column;
   justify-content: center;
   border-radius: 30px;
+  align-items: center; /* centra todo horizontal */
 }
 
 .app-name {
@@ -17,6 +18,7 @@
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
   font-family: 'Space Grotesk', sans-serif;
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 .project-logo {
@@ -35,66 +37,82 @@
 .project-description {
   font-size: 1rem;
   color: #000;
-  margin: 0 auto;
+  margin: 1rem auto 0;
   max-width: 300px;
+  text-align: center;
+}
+
+/* Contenedor circular para features */
+.feature-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin: 1rem;
 }
 
 .feature-circle-img {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 50%;
-  cursor: pointer;
-  border: 4px solid #fff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: transform 0.2s;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* imagen completa visible */
+  transition: transform 0.3s ease;
+  padding: 20px;
 }
 
 .feature-circle-img:hover {
   transform: scale(1.05);
 }
 
-/* Efecto desordenado en escritorio */
+/* Efecto desordenado solo en escritorio */
 .feature-img.feature-1 {
   margin-top: 100px;
 }
 
-/* Responsive */
+/* ----------- Responsive Tablet ----------- */
 @media (max-width: 992px) {
   .projects-section {
-    padding: 0 auto;
+    padding: 1rem;
   }
 
   .app-name {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-top: 1rem;
   }
 
   .project-logo {
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
+  }
+
+  .feature-img {
+    width: 140px;
+    height: 140px;
+    margin-top: 0;
   }
 
   .feature-circle-img {
-    width: 150px;
-    height: 150px;
-    margin: 5px auto;
-  }
-  
-  .project-description {
-    font-size: 0.9rem;
+    padding: 5px;
   }
 
+  .project-description {
+    font-size: 0.95rem;
+  }
 }
 
+/* ----------- Responsive Móvil ----------- */
 @media (max-width: 576px) {
   .projects-section {
-    padding: 0 auto;
+    padding: 1rem;
   }
 
   .app-name {
-    font-size: 1.5rem;
-    margin-top: 1rem;
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
   }
 
   .project-logo {
@@ -102,18 +120,23 @@
     height: 120px;
   }
 
+  .feature-img {
+    width: 120px;
+    height: 120px;
+    margin-top: 0;
+  }
+
   .feature-circle-img {
-    width: 100px;
-    height: 100px;
-    margin: 5px auto;
+    padding: 5px;
   }
 
   .project-description {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    max-width: 90%;
   }
 
-  .feature-img {
+  /* Evita que imágenes se corten en móviles */
+  .feature-img.feature-1 {
     margin-top: 0 !important;
   }
 }
-

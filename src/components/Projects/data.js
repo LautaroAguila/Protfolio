@@ -1,4 +1,6 @@
 import Lisa from '../../assets/lisa.png'
+import tuturno from '../../assets/tuturno.png'
+import asistent from '../../assets/asistent.png'
 import noFoto from '../../assets/nofoto.png'
 import proceso from '../../assets/proceso.png'
 import catalogo from '../../assets/catalogo de productos.jpeg'
@@ -6,6 +8,7 @@ import estadisticas from '../../assets/estadisticas.jpeg'
 import video from '../../assets/video.png'
 import eficiencia from '../../assets/eficiencia.png'
 import check from '../../assets/check.png'
+import { ImOpt } from 'react-icons/im'
 
 export const projects = [
   {
@@ -36,23 +39,23 @@ export const projects = [
   {
     title: 'Asistent',
     description: 'Una aplicación en desarrollo. Clave para tomar lista en las instituciones educativas. Lleva el registro de todos tus alumnos con información relevante para tener el control de su desempeño.',
-    logo: proceso,
+    logo: asistent,
     link: '',
     features: [
       {
-        title: 'Login con Google',
-        text: 'Permite iniciar sesión de forma segura usando Google.',
+        title: 'Estamos trabajando',
+        text: ' ',
         image: noFoto,
       },
       {
         title: 'Tutorial en Video',
-        text: 'Aprendé cómo usar la app en menos de 1 minuto.',
+        text: 'Aprenderas cómo usar la app en menos de 1 minuto.',
         image: noFoto,
         video: ''
       },
       {
-        title: 'Vista por Categorías',
-        text: 'Organizá tus tareas por colores y prioridades.',
+        title: 'Estamos trabajando',
+        text: ' ',
         image: noFoto,
       },
       
@@ -61,23 +64,23 @@ export const projects = [
   {
     title: 'TUTUrno',
     description: 'Una aplicación en desarrollo. Tus clientes podran sacar turnos para solicitar tus servicios. Deja atrás los chats de Whatsapp y recibí notificaiones de los turnos asignados sin preocuparte.',
-    logo: proceso,
+    logo: tuturno,
     link: '',
     features: [
       {
-        title: 'Login con Google',
-        text: 'Permite iniciar sesión de forma segura usando Google.',
+        title: 'Estamos trabajando',
+        text: '',
         image: noFoto,
       },
       {
         title: 'Tutorial en Video',
-        text: 'Aprendé cómo usar la app en menos de 1 minuto.',
+        text: 'Aprenderas cómo usar la app en menos de 1 minuto.',
         image: noFoto,
         video: ''
       },
       {
-        title: 'Vista por Categorías',
-        text: 'Organizá tus tareas por colores y prioridades.',
+        title: 'Estamos trabajando',
+        text: ' ',
         image: noFoto,
       },
       
